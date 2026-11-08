@@ -3,370 +3,222 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#090817">
-<meta name="description" content="KASTILO STUDIO - مشروع مصري لتطوير استوديو إنتاج موسيقي بمساعدة الذكاء الاصطناعي.">
+<meta name="description" content="KASTILO STUDIO - AI Powered Music Production">
 <title>KASTILO STUDIO | AI Music</title>
 <style>
-:root {
- --bg:#090817;
- --panel:#13152b;
- --cyan:#46e5ee;
- --purple:#a477ff;
- --pink:#f05bd5;
- --muted:#c4bfd8;
-}
+:root{--bg:#090817;--panel:#13152b;--cyan:#46e5ee;--purple:#a477ff;--pink:#f05bd5;--muted:#c4bfd8}
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{
- font-family:Tahoma,Arial,sans-serif;
- background:var(--bg);
- color:#fff;
- line-height:1.85;
-}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:#fff;line-height:1.85}
 a{color:inherit}
-.container{width:min(1100px,90%);margin:auto}
-header{
- position:sticky;top:0;z-index:10;
- background:#090817ef;
- border-bottom:1px solid #ffffff18;
- backdrop-filter:blur(14px);
-}
-.nav{
- min-height:76px;display:flex;
- align-items:center;justify-content:space-between;
- gap:20px;
-}
-.logo{
- font-size:23px;font-weight:900;
- background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink));
- -webkit-background-clip:text;background-clip:text;
- color:transparent;text-decoration:none;
- white-space:nowrap;
-}
-nav{display:flex;gap:18px;flex-wrap:wrap}
-nav a{
- color:var(--cyan);text-decoration:none;font-size:14px;
-}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#090817ee;border-bottom:1px solid #ffffff20;backdrop-filter:blur(14px)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.logo{font-size:22px;font-weight:900;background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent;text-decoration:none;white-space:nowrap}
+nav{display:flex;gap:14px;flex-wrap:wrap}
+nav a{font-size:13px;color:var(--cyan);text-decoration:none}
 nav a:hover{color:var(--pink)}
-.hero{
- text-align:center;padding:105px 12px 95px;
- background:
- radial-gradient(ellipse at 18% 25%,#33205b88,transparent 42%),
- radial-gradient(ellipse at 82% 50%,#123b5288,transparent 42%);
-}
-.tag{
- display:inline-block;border:1px solid #46e5ee88;
- border-radius:30px;padding:5px 18px;
- color:var(--cyan);font-size:13px;
-}
-h1{font-size:clamp(38px,7vw,72px);line-height:1.35;margin:24px 0}
-.gradient{
- background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink));
- -webkit-background-clip:text;background-clip:text;color:transparent;
-}
-.hero p{max-width:780px;margin:auto;color:var(--muted);font-size:18px}
-.btn{
- display:inline-block;margin-top:30px;padding:12px 27px;
- border-radius:12px;text-decoration:none;font-weight:bold;
- background:linear-gradient(90deg,var(--cyan),var(--purple));
- color:#090817;transition:.25s;
-}
-.btn:hover{transform:translateY(-3px);box-shadow:0 0 24px #46e5ee55}
-section{padding:75px 0}
-.title{text-align:center;font-size:clamp(26px,4vw,36px);margin-bottom:12px}
-.subtitle{
- text-align:center;color:#aaa5c3;
- margin:0 auto 38px;max-width:720px;
-}
-.cards{
- display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
-}
-.card{
- padding:27px;border:1px solid #ffffff20;
- border-radius:18px;
- background:linear-gradient(145deg,#ffffff12,#ffffff05);
- transition:.25s;
-}
-.card:hover{
- transform:translateY(-5px);
- border-color:#46e5ee88;
- box-shadow:0 0 25px #46e5ee18;
-}
-.icon{font-size:34px}
-.card h3{margin:12px 0;color:var(--cyan);font-size:20px}
-.card p,.step p{color:var(--muted);font-size:15px}
-.note{font-size:13px;color:#a9a4c1;text-align:center;margin-top:24px}
-.process{
- background:#ffffff06;
- border-top:1px solid #ffffff12;
- border-bottom:1px solid #ffffff12;
-}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
-.step{
- padding:22px 18px;border:1px solid #ffffff18;
- border-radius:16px;background:var(--panel);
-}
-.number{
- display:inline-grid;place-items:center;
- width:35px;height:35px;border-radius:50%;
- background:#46e5ee18;color:var(--cyan);font-weight:bold;
-}
-.step h3{margin:12px 0 7px;font-size:17px}
+.hero{text-align:center;padding:95px 12px;background:radial-gradient(ellipse at 15% 20%,#33205b99,transparent 43%),radial-gradient(ellipse at 85% 50%,#123b5288,transparent 43%)}
+.tag{display:inline-block;border:1px solid #46e5ee88;border-radius:30px;padding:5px 18px;color:var(--cyan);font-size:12px}
+h1{font-size:clamp(38px,7vw,70px);line-height:1.35;margin:22px 0}
+.gradient{background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:820px;margin:auto;color:var(--muted);font-size:18px}
+.btn{display:inline-block;margin-top:25px;padding:11px 25px;border-radius:12px;background:linear-gradient(90deg,var(--cyan),var(--purple));color:#090817;text-decoration:none;font-weight:bold}
+section{padding:70px 0}
+.title{text-align:center;font-size:clamp(26px,4vw,35px);margin-bottom:10px}
+.subtitle{text-align:center;color:#aaa5c3;margin:0 auto 34px;max-width:800px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{padding:23px;border:1px solid #ffffff20;border-radius:17px;background:linear-gradient(145deg,#ffffff12,#ffffff05);transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:#46e5ee88;box-shadow:0 0 22px #46e5ee16}
+.icon{font-size:30px}
+.card h3{margin:8px 0;color:var(--cyan);font-size:18px}
+.card p,.step p,.module p{color:var(--muted);font-size:14px}
+.dark{background:#ffffff06;border-block:1px solid #ffffff12}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{padding:20px;border:1px solid #ffffff20;border-radius:15px;background:var(--panel)}
+.number{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#46e5ee18;color:var(--cyan);font-weight:bold}
+.step h3{margin:10px 0 6px;font-size:16px}
+.modules{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.module{padding:22px;border:1px solid #a477ff55;border-radius:16px;background:linear-gradient(145deg,#a477ff13,#46e5ee08)}
+.module h3{color:var(--pink);margin:5px 0 8px;direction:ltr}
+.module .ar{color:var(--cyan);font-size:14px}
+.feature-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:950px;margin:auto}
+.feature{padding:15px;border:1px solid #ffffff20;border-radius:12px;background:#ffffff08}
+.feature strong{color:var(--cyan)}
 .about{text-align:center}
-.about p{max-width:800px;margin:auto;color:var(--muted);font-size:17px}
-.founder{
- max-width:760px;margin:auto;padding:35px;
- border:1px solid #a477ff66;border-radius:20px;
- background:linear-gradient(145deg,#a477ff18,#46e5ee08);
- text-align:center;
-}
-.founder .avatar{font-size:48px}
-.founder h3{color:var(--cyan);font-size:24px;margin:10px}
+.about p{max-width:850px;margin:auto;color:var(--muted)}
+.founder{max-width:760px;margin:auto;padding:30px;border:1px solid #a477ff66;border-radius:20px;background:#a477ff12;text-align:center}
+.founder h3{color:var(--cyan);font-size:23px;margin:8px}
 .founder p{color:var(--muted)}
-.roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.roadmap article{
- border-right:3px solid var(--purple);
- padding:17px 20px;background:#ffffff08;border-radius:12px;
-}
-.roadmap h3{color:var(--cyan);margin-bottom:7px}
+.roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.roadmap article{border-right:3px solid var(--purple);padding:16px 19px;background:#ffffff08;border-radius:12px}
+.roadmap h3{color:var(--cyan);margin-bottom:6px}
 .roadmap p{color:var(--muted);font-size:14px}
-.contact{
- text-align:center;
- background:radial-gradient(ellipse at center,#251b4380,transparent 65%);
-}
-.email{
- display:inline-block;color:var(--cyan);
- text-decoration:none;font-size:18px;
- direction:ltr;margin-top:8px;
-}
-footer{
- text-align:center;padding:25px;color:#aaa;
- border-top:1px solid #ffffff20;font-size:13px;
-}
+.notice{max-width:950px;margin:28px auto 0;padding:16px;border:1px solid #f05bd566;border-radius:13px;color:#d7cce9;background:#f05bd50b;font-size:13px;text-align:center}
+.contact{text-align:center;background:radial-gradient(ellipse at center,#251b4380,transparent 65%)}
+.email{display:inline-block;color:var(--cyan);text-decoration:none;font-size:18px;direction:ltr;margin-top:8px}
+footer{text-align:center;padding:24px;color:#aaa;border-top:1px solid #ffffff20;font-size:13px}
 footer span{color:var(--cyan)}
-@media(max-width:760px){
- .nav{padding:14px 0;flex-direction:column}
- .nav nav{justify-content:center;gap:12px 18px}
- .hero{padding:72px 10px}
- .cards,.steps,.roadmap{grid-template-columns:1fr}
- .container{width:92%}
- section{padding:58px 0}
-}
+@media(max-width:800px){.nav{padding:13px 0;flex-direction:column}.nav nav{justify-content:center}.cards,.modules{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.hero{padding:60px 8px}.cards,.modules,.steps,.feature-list,.roadmap{grid-template-columns:1fr}section{padding:55px 0}}
 </style>
 </head>
 <body>
-
 <header>
- <div class="container nav">
-  <a class="logo" href="#home">KASTILO STUDIO</a>
-  <nav aria-label="القائمة الرئيسية">
-   <a href="#idea">الفكرة</a>
-   <a href="#workflow">طريقة العمل</a>
-   <a href="#features">المميزات</a>
-   <a href="#vision">رؤيتنا</a>
-   <a href="#founder">المؤسس</a>
-   <a href="#roadmap">التطوير</a>
-   <a href="#contact">تواصل</a>
-  </nav>
- </div>
+<div class="container nav">
+<a class="logo" href="#home">KASTILO STUDIO</a>
+<nav>
+<a href="#idea">الفكرة</a>
+<a href="#workflow">طريقة العمل</a>
+<a href="#recording">التسجيل</a>
+<a href="#audio">معالجة الصوت</a>
+<a href="#production">الإنتاج</a>
+<a href="#editing">التحرير</a>
+<a href="#modules">الأقسام</a>
+<a href="#founder">المؤسس</a>
+<a href="#contact">تواصل</a>
+</nav>
+</div>
 </header>
 
 <main id="home">
-
 <section class="hero">
- <div class="tag">AI • MUSIC • CREATIVITY</div>
- <h1>صوتك هو البداية<br><span class="gradient">والموسيقى حكايتك</span></h1>
- <p>
- KASTILO STUDIO مشروع مصري قيد التطوير،
- يستكشف كيف يمكن للذكاء الاصطناعي مساعدة المبدعين
- على تحويل تسجيلاتهم الصوتية وكلماتهم إلى أعمال موسيقية متكاملة.
- </p>
- <a class="btn" href="#idea">اكتشف فكرة المشروع</a>
+<div class="tag">AI-POWERED MUSIC PRODUCTION</div>
+<h1>صوتك هو البداية<br><span class="gradient">والموسيقى حكايتك</span></h1>
+<p>KASTILO STUDIO مساعد إنتاج موسيقي ذكي داخل ChatGPT، يساعد المبدعين على تطوير تسجيلاتهم وكلماتهم وأفكارهم الموسيقية، من أول التسجيل حتى تجهيز أغنية متكاملة.</p>
+<a class="btn" href="#idea">اكتشف الاستوديو</a>
 </section>
 
-<section id="idea">
- <div class="container">
-  <h2 class="title">من الفكرة إلى الأغنية</h2>
-  <p class="subtitle">
-   تجربة موسيقية مستهدفة تجمع بين صوتك ورؤيتك الفنية وأدوات الإنتاج الذكية.
-  </p>
-  <div class="cards">
-   <article class="card">
-    <div class="icon">🎙️</div>
-    <h3>صوتك وكلماتك</h3>
-    <p>ابدأ بتسجيل صوتك وإضافة كلمات الأغنية التي تريد تقديمها.</p>
-   </article>
-   <article class="card">
-    <div class="icon">🎼</div>
-    <h3>اللحن والتوزيع</h3>
-    <p>تطوير أدوات تساعد على اقتراح الألحان والتوزيعات المناسبة لطبيعة صوتك.</p>
-   </article>
-   <article class="card">
-    <div class="icon">✨</div>
-    <h3>إنتاج موسيقي متكامل</h3>
-    <p>العمل على مزامنة الموسيقى مع الغناء وتجهيز نسخة صوتية نهائية.</p>
-   </article>
-  </div>
- </div>
-</section>
+<section id="idea"><div class="container">
+<h2 class="title">استوديو موسيقي يبدأ من صوتك</h2>
+<p class="subtitle">تجربة تجمع بين التسجيل وفهم الأداء والتلحين والتوزيع ومعالجة الصوت.</p>
+<div class="cards">
+<article class="card"><div class="icon">🎙️</div><h3>صوتك وكلماتك</h3><p>ارفع تسجيلك أو سجّل أداءك وأضف كلماتك واتجاهك الفني. لا يتم تغيير كلماتك دون موافقتك.</p></article>
+<article class="card"><div class="icon">🎼</div><h3>اللحن والهوية الموسيقية</h3><p>تحليل الأداء واقتراح اللحن والمقام والإيقاع والآلات المناسبة للون الموسيقي.</p></article>
+<article class="card"><div class="icon">🎧</div><h3>من التسجيل إلى الأغنية</h3><p>معالجة الصوت وبناء التوزيع والمكساج والماسترينج وتجهيز ملف صوتي نهائي.</p></article>
+</div>
+</div></section>
 
-<section id="features" class="process">
- <div class="container">
-  <h2 class="title">تقنيات ومميزات الاستوديو</h2>
-  <p class="subtitle">خصائص نهدف إلى تطويرها ضمن تجربة KASTILO STUDIO.</p>
-  <div class="cards">
-   <article class="card">
-    <div class="icon">🎧</div>
-    <h3>عزل ضوضاء الصوت</h3>
-    <p>
-     تطوير تقنية لتقليل ضوضاء الخلفية والتشويش والأصوات غير المرغوبة،
-     مع الحفاظ على وضوح صوت المغني وتفاصيل أدائه قدر الإمكان.
-    </p>
-   </article>
-   <article class="card">
-    <div class="icon">🔊</div>
-    <h3>تحسين نقاء الصوت</h3>
-    <p>
-     العمل على تحسين جودة التسجيل ووضوح الصوت،
-     وتقليل التشويش ومعالجة مستويات الصوت.
-    </p>
-   </article>
-   <article class="card">
-    <div class="icon">🎚️</div>
-    <h3>مزامنة الغناء والموسيقى</h3>
-    <p>
-     تطوير أدوات لمواءمة توقيت الموسيقى والإيقاع مع أداء المغني
-     وتسجيله الصوتي.
-    </p>
-   </article>
-   <article class="card">
-    <div class="icon">🎹</div>
-    <h3>الألحان والتوزيع</h3>
-    <p>
-     استكشاف إنشاء ألحان وتوزيعات موسيقية تناسب اللون الفني
-     الذي يختاره المستخدم.
-    </p>
-   </article>
-   <article class="card">
-    <div class="icon">🎛️</div>
-    <h3>المؤثرات الصوتية</h3>
-    <p>
-     العمل على إضافة مؤثرات وتحسينات صوتية قابلة للتخصيص
-     حسب طبيعة الأغنية.
-    </p>
-   </article>
-   <article class="card">
-    <div class="icon">📥</div>
-    <h3>تصدير الأغنية</h3>
-    <p>
-     الهدف هو توفير ملف صوتي نهائي بجودة مناسبة
-     يمكن للمستخدم حفظه والاستماع إليه.
-    </p>
-   </article>
-  </div>
-  <p class="note">
-   جميع الخصائص المذكورة أهداف ضمن مرحلة التطوير،
-   وليست إعلانًا عن خدمات مكتملة أو متاحة حاليًا.
-  </p>
- </div>
-</section>
+<section id="workflow" class="dark"><div class="container">
+<h2 class="title">رحلة إنتاج الأغنية</h2>
+<p class="subtitle">خطوات العمل المستهدفة داخل الاستوديو.</p>
+<div class="steps">
+<article class="step"><span class="number">1</span><h3>ارفع أو سجّل صوتك</h3><p>اختيار التسجيل والميكروفون وإعدادات الصوت والكلمات.</p></article>
+<article class="step"><span class="number">2</span><h3>حلّل ونظّف الصوت</h3><p>فهم الأداء والتوقيت وتقليل الضوضاء وتجهيز المسار.</p></article>
+<article class="step"><span class="number">3</span><h3>اصنع اللحن والتوزيع</h3><p>اختيار المقام والإيقاع والآلات وبناء الموسيقى حول صوتك.</p></article>
+<article class="step"><span class="number">4</span><h3>امزج وصدّر</h3><p>المكساج والماسترينج والمراجعة ثم تصدير الأغنية.</p></article>
+</div>
+</div></section>
 
-<section id="workflow">
- <div class="container">
-  <h2 class="title">كيف نتخيل التجربة؟</h2>
-  <p class="subtitle">رحلة العمل المستهدفة في استوديو الأغاني.</p>
-  <div class="steps">
-   <article class="step">
-    <span class="number">1</span>
-    <h3>سجّل صوتك</h3>
-    <p>قدّم التسجيل الصوتي والكلمات الخاصة بك.</p>
-   </article>
-   <article class="step">
-    <span class="number">2</span>
-    <h3>نظّف التسجيل</h3>
-    <p>تقليل الضوضاء وتحسين نقاء الصوت ضمن الأدوات المستهدفة.</p>
-   </article>
-   <article class="step">
-    <span class="number">3</span>
-    <h3>طوّر الأغنية</h3>
-    <p>العمل على اللحن والتوزيع ومزامنتهما مع صوتك.</p>
-   </article>
-   <article class="step">
-    <span class="number">4</span>
-    <h3>استمع وراجع</h3>
-    <p>مراجعة العمل وتجهيز التصدير الصوتي ضمن المنتج المستهدف.</p>
-   </article>
-  </div>
- </div>
-</section>
+<section id="recording"><div class="container">
+<h2 class="title">التسجيل وأدوات الأداء</h2>
+<p class="subtitle">إعدادات تمنح المستخدم تحكمًا أكبر في تسجيل صوته.</p>
+<div class="cards">
+<article class="card"><div class="icon">🎤</div><h3>اختيار الميكروفون</h3><p>اختيار مصدر الإدخال وضبط حساسية الميكروفون ومستوى الالتقاط.</p></article>
+<article class="card"><div class="icon">🎙️</div><h3>التسجيل مع الموسيقى</h3><p>تسجيل الغناء أثناء الاستماع إلى الموسيقى أو الإيقاع المصاحب.</p></article>
+<article class="card"><div class="icon">⚡</div><h3>مراقبة مباشرة منخفضة التأخير</h3><p>الاستماع للصوت أثناء التسجيل مع استهداف تقليل زمن التأخير.</p></article>
+<article class="card"><div class="icon">🔀</div><h3>الصوت الأصلي والمعالج</h3><p>التبديل بين سماع التسجيل الأصلي والصوت بعد المعالجة.</p></article>
+<article class="card"><div class="icon">🛡️</div><h3>منع الصدى والتغذية الراجعة</h3><p>أدوات للتحكم في الصدى والارتداد الصوتي وتقليل التداخل.</p></article>
+<article class="card"><div class="icon">🌊</div><h3>موجات صوتية متحركة</h3><p>عرض بصري لموجة الصوت ومتابعة التسجيل ومراحله.</p></article>
+</div>
+</div></section>
 
-<section id="vision" class="about">
- <div class="container">
-  <h2 class="title">رؤيتنا</h2>
-  <p>
-   نؤمن أن لكل شخص صوتًا وحكاية تستحق أن تُسمع.
-   هدف KASTILO STUDIO هو جعل أدوات الإبداع الموسيقي أكثر قربًا للمواهب،
-   من خلال الجمع بين الذكاء الاصطناعي والإنتاج الموسيقي،
-   مع احترام حقوق أصحاب التسجيلات والكلمات والأعمال الفنية والملكية الفكرية.
-  </p>
- </div>
-</section>
+<section id="audio" class="dark"><div class="container">
+<h2 class="title">تنقية الصوت وفصله ومعالجته</h2>
+<p class="subtitle">أدوات مستهدفة لتحسين التسجيل والتحكم في مكوناته.</p>
+<div class="cards">
+<article class="card"><div class="icon">🎧</div><h3>عزل ضوضاء الصوت</h3><p>تقليل ضوضاء الخلفية والهسيس والأصوات غير المرغوبة مع الحفاظ على وضوح صوت المغني.</p></article>
+<article class="card"><div class="icon">🎙️</div><h3>فصل صوت المغني عن الموسيقى</h3><p>استخراج مسار الغناء ومسار الموسيقى بشكل منفصل لمعالجة كل مسار بصورة مستقلة.</p></article>
+<article class="card"><div class="icon">✨</div><h3>تحسين نقاء الصوت</h3><p>تنظيف التسجيل وتحسين الوضوح والتعامل مع مستويات الصوت والتشويش.</p></article>
+<article class="card"><div class="icon">🎚️</div><h3>المعادل الصوتي EQ</h3><p>التحكم في الترددات وإعدادات البيز والتريبل وتشكيل نبرة الصوت.</p></article>
+<article class="card"><div class="icon">🎛️</div><h3>الضغط الصوتي Compressor</h3><p>التحكم في تفاوت مستوى الصوت وإبراز الأداء بصورة متوازنة.</p></article>
+<article class="card"><div class="icon">🎹</div><h3>تصحيح طبقة الصوت Auto-Tune</h3><p>المساعدة في ضبط طبقة النغمات مع الحفاظ على طبيعة الأداء قدر الإمكان.</p></article>
+<article class="card"><div class="icon">🌌</div><h3>الصدى والمؤثرات</h3><p>إضافة Reverb وEcho ومؤثرات قابلة للتخصيص حسب طبيعة الأغنية.</p></article>
+<article class="card"><div class="icon">↔️</div><h3>التحكم الستيريو</h3><p>توزيع الصوت يمينًا ويسارًا والتحكم في Pan وتوازن المسارات.</p></article>
+</div>
+</div></section>
 
-<section id="founder">
- <div class="container">
-  <h2 class="title">مؤسس المشروع</h2>
-  <p class="subtitle">الرؤية التي تقف وراء KASTILO STUDIO.</p>
-  <div class="founder">
-   <div class="avatar">👨‍💻</div>
-   <h3>أحمد جمعة</h3>
-   <p>المؤسس وصاحب فكرة KASTILO STUDIO</p>
-   <p>
-    يعمل على تطوير رؤية لاستوديو موسيقي يعتمد على الذكاء الاصطناعي،
-    بهدف مساعدة المبدعين على تحويل أصواتهم وأفكارهم إلى تجارب موسيقية.
-   </p>
-  </div>
- </div>
-</section>
+<section id="production"><div class="container">
+<h2 class="title">التلحين والتوزيع والإنتاج</h2>
+<p class="subtitle">مساعد إبداعي يحول الفكرة إلى رؤية موسيقية.</p>
+<div class="cards">
+<article class="card"><div class="icon">🎼</div><h3>تحليل الأداء الغنائي</h3><p>دراسة توقيت الغناء وطبيعة الأداء لبناء الموسيقى بما يناسب التسجيل.</p></article>
+<article class="card"><div class="icon">🎵</div><h3>اقتراح اللحن والمقام</h3><p>اقتراح اتجاهات لحنية ومقامات تناسب الكلمات والإحساس والأداء.</p></article>
+<article class="card"><div class="icon">🥁</div><h3>اختيار الإيقاع</h3><p>تحديد الإيقاع والسرعة والطابع الموسيقي المناسب لنوع الأغنية.</p></article>
+<article class="card"><div class="icon">🎸</div><h3>اختيار الآلات</h3><p>اقتراح الآلات والأصوات الموسيقية التي تخدم التوزيع.</p></article>
+<article class="card"><div class="icon">🎹</div><h3>التوزيع والموسيقى الخلفية</h3><p>بناء خلفية موسيقية ومرافقة مناسبة وضبطها حول توقيت الغناء.</p></article>
+<article class="card"><div class="icon">🎚️</div><h3>المكساج والماسترينج</h3><p>موازنة المسارات ومعالجة الصوت وتجهيز النسخة النهائية.</p></article>
+</div>
+</div></section>
 
-<section id="roadmap">
- <div class="container">
-  <h2 class="title">خطة التطوير</h2>
-  <p class="subtitle">خطوات نعمل على دراستها وبنائها تدريجيًا.</p>
-  <div class="roadmap">
-   <article>
-    <h3>01 — تحديد المنتج</h3>
-    <p>توضيح تجربة المستخدم والخصائص الأساسية للاستوديو.</p>
-   </article>
-   <article>
-    <h3>02 — بناء نموذج أولي</h3>
-    <p>استكشاف تقنيات معالجة الصوت وعزل الضوضاء وتطوير الموسيقى.</p>
-   </article>
-   <article>
-    <h3>03 — الاختبار والتحسين</h3>
-    <p>تقييم جودة النتائج وتجربة الاستخدام قبل إتاحة أي خدمة.</p>
-   </article>
-  </div>
- </div>
-</section>
+<section id="editing" class="dark"><div class="container">
+<h2 class="title">تحرير المسارات والمشاريع</h2>
+<p class="subtitle">تحكم مرن في أجزاء الأغنية ومراحل العمل.</p>
+<div class="feature-list">
+<div class="feature"><strong>✂️ قص وتقسيم:</strong> قص التسجيلات وتقسيمها إلى مقاطع.</div>
+<div class="feature"><strong>🧩 دمج المقاطع:</strong> دمج الأجزاء الصوتية وترتيبها.</div>
+<div class="feature"><strong>↔️ تحريك المقاطع:</strong> نقل المقاطع وضبط توقيتها على خط زمني.</div>
+<div class="feature"><strong>🎚️ مسارات متعددة:</strong> مسارات منفصلة للغناء والموسيقى والمؤثرات.</div>
+<div class="feature"><strong>🔉 تحكم مستقل:</strong> ضبط مستوى كل مسار ومعالجته منفصلًا.</div>
+<div class="feature"><strong>🎼 موسيقى خلفية:</strong> إضافة الموسيقى المصاحبة ومزامنتها مع الغناء.</div>
+<div class="feature"><strong>🗂️ سجل المشاريع:</strong> الاحتفاظ بتاريخ المشاريع والرجوع للأعمال السابقة.</div>
+<div class="feature"><strong>💾 حفظ تلقائي:</strong> الحفظ التلقائي واستكمال المشروع لاحقًا.</div>
+</div>
+</div></section>
 
-<section id="contact" class="contact">
- <div class="container">
-  <h2 class="title">هل ترغب في التعاون؟</h2>
-  <p class="subtitle">
-   نرحب بالاستفسارات والأفكار وفرص التعاون المتعلقة بالمشروع.
-  </p>
-  <a class="email" href="mailto:kastilomods@gmail.com">
-   kastilomods@gmail.com
-  </a>
- </div>
-</section>
+<section id="modules"><div class="container">
+<h2 class="title">أقسام KASTILO STUDIO</h2>
+<p class="subtitle">مساعدون متخصصون ضمن رحلة إنتاج واحدة.</p>
+<div class="modules">
+<article class="module"><h3>KASTILO VOCALS</h3><div class="ar">الصوت والغناء</div><p>التسجيل وتحليل الأداء وتنقية الصوت وعزل الضوضاء وفصل الغناء.</p></article>
+<article class="module"><h3>KASTILO MUSIC</h3><div class="ar">الموسيقى والتوزيع</div><p>اللحن والمقام والإيقاع والآلات والموسيقى الخلفية.</p></article>
+<article class="module"><h3>KASTILO LYRICS</h3><div class="ar">الكلمات</div><p>تنظيم الكلمات والعمل عليها دون تغييرها إلا بموافقة صاحبها.</p></article>
+<article class="module"><h3>KASTILO MIX</h3><div class="ar">المكساج والماسترينج</div><p>موازنة المسارات والمؤثرات والتحكم في جودة الصوت النهائي.</p></article>
+<article class="module"><h3>KASTILO CREATIVE</h3><div class="ar">الإبداع والهوية الفنية</div><p>اقتراح الأفكار والاتجاهات الموسيقية حسب رؤية المستخدم.</p></article>
+<article class="module"><h3>KASTILO PRODUCER</h3><div class="ar">إدارة الإنتاج</div><p>تنظيم خطوات المشروع ومراجعة المراحل وتجهيز النسخة النهائية.</p></article>
+</div>
+</div></section>
 
+<section id="export"><div class="container">
+<h2 class="title">الحفظ والتصدير</h2>
+<p class="subtitle">خيارات مستهدفة لحفظ العمل ومشاركته.</p>
+<div class="cards">
+<article class="card"><div class="icon">🎵</div><h3>تصدير MP3</h3><p>نسخة مضغوطة مع خيارات للتحكم في معدل البت والجودة.</p></article>
+<article class="card"><div class="icon">💎</div><h3>تصدير WAV عالي الجودة</h3><p>نسخة WAV بجودة مرتفعة للاحتفاظ بها أو استكمال العمل عليها.</p></article>
+<article class="card"><div class="icon">⏯️</div><h3>استكمال المشروع</h3><p>حفظ مراحل العمل والعودة إليها بدل البدء من جديد.</p></article>
+</div>
+</div></section>
+
+<section id="vision" class="about"><div class="container">
+<h2 class="title">رؤيتنا ومبادئنا</h2>
+<p>نهدف إلى جعل أدوات الإنتاج الموسيقي أقرب للمبدعين، مع الحفاظ على شخصية صوت المغني واحترام اختياراته الفنية. لا يتم تغيير كلمات المستخدم دون موافقته، ولا ندّعي تنفيذ معالجة صوتية أو إنتاج موسيقي ما لم تتم فعليًا. وعند الحاجة إلى أدوات صوتية خارجية أو خدمات متخصصة، يتم توضيح ذلك للمستخدم.</p>
+</div></section>
+
+<section id="founder"><div class="container">
+<h2 class="title">مؤسس المشروع</h2>
+<p class="subtitle">الرؤية التي تقف وراء KASTILO STUDIO.</p>
+<div class="founder"><div class="icon">👨‍💻</div><h3>أحمد جمعة</h3><p>المؤسس وصاحب فكرة KASTILO STUDIO</p><p>يعمل على تطوير رؤية لمساعد إنتاج موسيقي بالذكاء الاصطناعي يضع صوت المبدع وكلماته ورؤيته الفنية في قلب عملية الإنتاج.</p></div>
+</div></section>
+
+<section id="roadmap" class="dark"><div class="container">
+<h2 class="title">خطة التطوير</h2>
+<p class="subtitle">المراحل المستهدفة لبناء التجربة واختبارها تدريجيًا.</p>
+<div class="roadmap">
+<article><h3>01 — تصميم التجربة</h3><p>تحديد واجهة الاستوديو وأقسامه ومسار التسجيل والإنتاج.</p></article>
+<article><h3>02 — ربط التقنيات</h3><p>دراسة وربط خدمات الذكاء الاصطناعي وأدوات معالجة الصوت والفصل والتوزيع.</p></article>
+<article><h3>03 — الاختبار والتحسين</h3><p>اختبار جودة الصوت والتزامن والتصدير وتجربة الاستخدام قبل الإتاحة.</p></article>
+</div>
+<div class="notice">KASTILO STUDIO مشروع قيد التطوير. عرض المميزات لا يعني أنها أصبحت متاحة أو تعمل بالفعل. بعض وظائف التسجيل والمعالجة والتصدير تتطلب تطويرًا تقنيًا وربط أدوات صوتية خارجية. يجب استخدام تسجيلات وموسيقى وكلمات يملك المستخدم حقوق استخدامها أو لديه إذن بها.</div>
+</div></section>
+
+<section id="contact" class="contact"><div class="container">
+<h2 class="title">هل ترغب في التعاون؟</h2>
+<p class="subtitle">نرحب بالاستفسارات والأفكار وفرص التعاون المتعلقة بالمشروع.</p>
+<a class="email" href="mailto:kastilomods@gmail.com">kastilomods@gmail.com</a>
+</div></section>
 </main>
-
-<footer>
- © 2026 <span>KASTILO STUDIO</span> — جميع الحقوق محفوظة
-</footer>
-
+<footer>© 2026 <span>KASTILO STUDIO</span> — جميع الحقوق محفوظة</footer>
 </body>
 </html>
